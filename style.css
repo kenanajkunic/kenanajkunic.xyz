@@ -1,0 +1,64 @@
+:root {
+  	font-size: calc(1vw + 1vh + 1.5vmin);
+}
+html, body {
+	height: 100%;
+	margin: 0;
+}
+.container {
+	margin: 0 auto;
+}
+body {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background-color: #010a00;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-family: 'BebasNeueBold';
+   	font-weight: normal;
+   	font-style: normal;
+   	font-size: 2rem;
+}
+h1 {
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+}
+p, i {
+	color: white;
+	text-align: center;
+	font-size: 1rem;
+	font-family: 'OrkneyRegular';
+   	font-weight: normal;
+   	font-style: normal;
+}
+a:hover i {
+	transform: translateY(-20px);
+	text-shadow: 0 0 1vw #fff;
+  	transition: 0.3s;
+}
+.glow {
+	color: #fff;
+	text-shadow: 0 0 .5vw #fff
+}
+.glow {
+	animation: glow 5s ease infinite;
+	-moz-animation: glow 5s ease infinite;
+	-webkit-animation: glow 5s ease infinite;
+}
+@keyframes glow {
+	0%,
+	100% {
+		text-shadow: 0 0 1vw #fff;
+		color: #fff;
+	}
+	50% {
+		text-shadow: 0 0 .5vw #fff, 0 0 5vw #fff;
+		color: #fff;
+	}
+}
+.social {
+	text-align: center;
+}
